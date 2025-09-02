@@ -1,19 +1,528 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>new year offer resources</title>
-</head>
-<body>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/0b7a4f3131.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      /* top-banner-style */
+      .top-hero-baner {
+        width: 1320px;
+        height: 600px;
+        border-radius: 16px;
+        margin: 0 auto;
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+          url("images/Banner_Image.png");
+      }
+      .banner-content {
+        text-align: center;
+        color: #ffffff;
+        padding: 177px 344px;
+        font-family: "Merriweather", serif;
+      }
+      .banner-title {
+        font-size: 32px;
+        margin: 0;
+      }
+      .banner-heading {
+        font-size: 72px;
+        margin-top: 16px;
+      }
+      /* banner style */
+      .banner {
+        text-align: center;
+        margin-top: 120px;
+      }
+      .banner-top-title {
+        font-size: 50px;
+        color: #ff0000;
+        font-weight: 600;
+      }
+      .banner-contents {
+        width: 802.9px;
+        height: 651px;
+        margin: 0 auto;
+      }
+      .banner-description {
+        font-size: 24px;
+        color: #ff0000;
+        font-family: "inter", sans-serif;
+        font-weight: 600;
+      }
+      .banner-subtitle {
+        font-family: "inter", sans-serif;
+        font-weight: bold;
+        font-size: 48px;
+        color: #070211;
+      }
+      .banner-img {
+        width: 100%;
+        /* height: 500px; */
+      }
+      /* welcome-design */
+      main section {
+        max-width: 1320px;
+        margin: 0 auto;
+        /* width: 100%; */
+      }
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      .welcome-design {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 120px;
+        background: linear-gradient(rgb(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+          url(images/Vectorrr.png);
+        gap: 40px;
+        border-radius: 16px;
+        padding: 60px;
+      }
+      .welcome-title {
+        color: white;
+        font-size: 64px;
+        font-family: "Merriweather" serif;
+      }
+      .welcome-description {
+        font-size: 18px;
+        color: white;
+        font-family: "inter", sans-serif;
+      }
+      .welcome-img img {
+        width: 100%;
+      }
+      .join-now {
+        font-family: "inter", sans-serif;
+        font-weight: bold;
+        font-size: 20px;
+        color: white;
+      }
+      /* details section */
+      .deatails {
+        border-radius: 16px;
+        background: linear-gradient(to bottom, rgba(255, 0, 0, 0.5), white);
+        margin-top: 120px;
+      }
+      .deatails-continer {
+        text-align: center;
+        font-weight: 600;
+        font-size: 32px;
+        color: #070211;
+        padding: 105px 385px;
+      }
+      .deatails-continer span {
+        color: red;
+      }
+      .deatails-continer button {
+        background-color: #ff0000;
+        color: white;
+        border-radius: 8px;
+        padding: 32px;
+        font-size: 16px;
+        border: none;
+        width: 167px;
+      }
+      /* comming son section */
+      .comming-son {
+        margin-top: 120px;
+      }
+      .comming-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 70px;
+      }
+      .left-containt {
+        text-align: left;
+        width: 393px;
+      }
+      .comming-title {
+        font-family: "inte", sans-serif;
+        font-weight: 600;
+        font-size: 24px;
+        color: #ff0000;
+      }
+      .comming-subtitle {
+        font-family: "Merriweather", serif;
+        font-size: 48px;
+        color: #070211;
+      }
+      .comming-description {
+        font-family: "inter", sans-serif;
+        font-size: 20px;
+        color: #070211;
+      }
+      .comming-son-img {
+        width: 463px;
+        border: 6px solid red;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .comming-son-img img {
+        width: 100%;
+        padding: 10px;
+      }
+      .right-title {
+        font-family: "inter", sans-serif;
+        font-weight: bold;
+        font-size: 48px;
+        color: #ff0000;
+      }
+      .right-description {
+        font-family: "inte", sans-serif;
+        font-size: 20px;
+        color: #070211;
+      }
+      .right-img {
+        width: 140px;
+        height: 140px;
+      }
+      /* holiday */
+      .hoiday {
+        margin-top: 120px;
+      }
+      .holiday-top-container {
+        text-align: center;
+        margin-bottom: 90px;
+      }
+      .holiday-bottom-container {
+        margin-top: 64px;
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+        min-height: 400px;
+      }
+      .gift-box {
+        position: absolute;
+        bottom: 90px;
+        left: 40px;
+        width: 350px;
+        height: 350px;
+      }
+      .discount-circle {
+        position: relative;
+        top: -30px;
+        right: -950px;
+        width: 150px;
+      }
+      .red-bar {
+        width: 100%;
+        border-radius: 16px;
+      }
+      .holiday-top-title {
+        font-family: "inter", sans-serif;
+        font-weight: 600;
+        font-size: 24px;
+        color: #070211;
+      }
+      .hoiday-top-subtitle {
+        font-family: "Merriweather", serif;
+        font-size: 72px;
+        color: #070211;
+      }
+      .red-bar img {
+        max-width: 1320px;
+      }
+
+      .holiday-top-description {
+        font-family: "inter", sans-serif;
+        color: #070211;
+        font-size: 20px;
+      }
+      /* awesome product */
+      .product {
+        margin-top: 120px;
+      }
+      .product-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 24px;
+        margin: 0 auto;
+      }
+      .products {
+        flex: 1 1 calc(33.33% - 24px);
+        max-width: calc(33.33% - 24px);
+        border-radius: 16px;
+        overflow: hidden;
+      }
+      .products img {
+        border-radius: 16px;
+        width: 100%;
+      }
+      .product-title {
+        font-family: "inter", sans-serif;
+        color: #ff0000;
+        font-size: 24px;
+        margin: 0;
+      }
+      .product-subtitle {
+        font-family: "Merriweather" serif;
+        font-size: 48px;
+        color: #070211;
+        margin: 0;
+      }
+      .product-description {
+        font-family: "inter", sans-serif;
+        font-size: 20px;
+        color: #070211;
+      }
+      /* newslater */
+      .newslater {
+        margin-top: 120px;
+        background: linear-gradient(
+          to bottom,
+          rgba(255, 0, 0, 0.3),
+          rgb(241, 198, 198)
+        );
+        padding: 80px;
+      }
+      .newslater-container img {
+        width: 150px;
+      }
+      .newslater-container {
+        text-align: center;
+      }
+      .newslater-title {
+        font-family: "Merriweather", serif;
+        font-size: 48px;
+        color: #070211;
+      }
+      .description {
+        font-family: "inter", sans-serif;
+        font-size: 20px;
+        color: #070211;
+      }
+      .from {
+        text-align: center;
+        margin-top: 50px;
+      }
+      .from input {
+        border-radius: 50px;
+        color: white;
+        padding: 25px;
+        border: none;
+        width: 100%;
+        max-width: 674px;
+        width: 100%;
+      }
+      /* footer */
+      footer {
+        margin-top: 80px;
+        background-color: black;
+        color: white;
+        padding: 50px 0;
+        width: 100%;
+        box-sizing: border-box;
+      }
+      .footer-top {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .footer-middle {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+        font-size: 50px;
+      }
+      .footer-bottom {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 10px;
+      }
+      .facebook {
+        color: #1877f2;
+      }
+      .instagram {
+        color: #e1306c;
+      }
+      .twitter {
+        color: #1da1f2;
+      }
+      .linkedin {
+        color: #0a66c2;
+      }
+    </style>
+  </head>
+  <body>
     <header>
-        
+      <section class="top-hero-baner">
+        <div class="banner-content">
+          <h3 class="banner-title">Happy New Year</h3>
+          <h1 class="banner-heading">New Year Party<br />Celebration</h1>
+        </div>
+      </section>
+      <section class="banner">
+        <h1 class="banner-top-title">65% OFF</h1>
+
+        <div class="banner-contents">
+          <p class="banner-description">OUR HOLIDAY DEALS ARE BETTER</p>
+          <h2 class="banner-subtitle">ALL CATEGORIES</h2>
+          <img
+            class="banner-img"
+            src="images/New Year Photo.png"
+            alt="New Year
+          Photo"
+          />
+        </div>
+      </section>
     </header>
     <main>
+      <section class="welcome">
+        <div class="welcome-design">
+          <div class="welcome-container">
+            <h2 class="welcome-title">Welcome to<br />midninght party</h2>
+            <p class="welcome-description">
+              Dolor sit amet consectetur. Consequat eget consectetur maecenas
+              sed molestie malesuada. Ipsum sed sodales risus ut pellentesque
+              vel euismod.
+            </p>
+            <h3 class="join-now">JOIN NOW</h3>
+          </div>
+          <div class="welcome-img">
+            <img src="images/Group 70.png" alt="Group-Imge" />
+          </div>
+        </div>
+      </section>
+      <section class="deatails">
+        <div class="deatails-continer">
+          <p><span>Place:</span> New Park Hotel</p>
+          <p><span>Date:</span> 31 December Night 2023</p>
+          <p><span>Time:</span> Evening 7.30 Pm To 12.30 Am</p>
+          <button>JOIN NOW</button>
+        </div>
+      </section>
+      <section class="comming-son">
+        <div class="comming-container">
+          <div class="left-containt">
+            <h3 class="comming-title">NEW BEST OFFER</h3>
+            <h1 class="comming-subtitle">Coming Soon</h1>
+            <p class="comming-description">
+              Dolor sit amet consectetur. Consequat<br />eget consectetur
+              maecenas sed molestie malesuada. Ipsum sed sodales risus ut<br />pellentesque
+              vel euismod.
+            </p>
+          </div>
+          <div class="comming-son-img">
+            <img src="images/Ellipse 1.png" alt="comming son imge" />
+          </div>
+          <div class="right-container">
+            <h1 class="right-title">2024</h1>
+            <p class="right-description">
+              Dolor sit amet consectetur. Consequat eget<br />consectetur
+              maecenas sed.
+            </p>
+            <img class="right-img" src="images/Group 96.png" alt="Group-Imge" />
+          </div>
+        </div>
+      </section>
+      <section class="hoiday">
+        <div class="holiday-top-container">
+          <h4 class="holiday-top-title">WHAT IS FUNCTIONAL</h4>
+          <h2 class="hoiday-top-subtitle">
+            <span class="red">Holidays</span> Sale 50%
+          </h2>
+          <p class="holiday-top-description">
+            Dolor sit amet consectetur. Consequat eget consectetur maecenas sed
+            molestie malesuada.<br />
+            Ipsum sed sodales risus ut pellentesque vel euismod.
+          </p>
+        </div>
+        <div class="holiday-bottom-container">
+          <img class="gift-box" src="images/Group 75.png" alt="imge" />
 
+          <img class="discount-circle" src="images/Group 44.png" alt="imge" />
+          <div class="red-bar">
+            <img src="images/Rectangle 2.png" alt="imge" />
+          </div>
+        </div>
+      </section>
+      <section class="product">
+        <h4 class="product-title">THE BEST GIFTS</h4>
+        <h2 class="product-subtitle">Our Awesome Portfolio</h2>
+        <p class="product-description">
+          Dolor sit amet consectetur. Consequat eget consectetur maecenas sed<br />
+          molestie malesuada. Ipsum sed sodales risus ut pellentesque vel
+          euismod.
+        </p>
+        <div class="product-container">
+          <div class="products">
+            <img src="images/Rectangle 3.png" alt="" />
+          </div>
+          <div class="products">
+            <img src="images/Rectangle 4.png" alt="" />
+          </div>
+          <div class="products">
+            <img src="images/Rectangle 5.png" alt="" />
+          </div>
+          <div class="products">
+            <img src="images/Rectangle 6.png" alt="" />
+          </div>
+          <div class="products">
+            <img src="images/Rectangle 7.png" alt="" />
+          </div>
+          <div class="products">
+            <img src="images/Rectangle 8.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <section class="newslater">
+        <div class="newslater-container">
+          <img src="images/Group 61.png" alt="imge" />
+          <h2 class="newslater-title">Subscribe Newsletter</h2>
+          <p class="description">
+            Dolor sit amet consectetur. Consequat eget consectetur maecenas sed
+            molestie malesuada.<br />
+            Ipsum sed sodales risus ut pellentesque vel euismod.
+          </p>
+        </div>
+        <div class="from">
+          <input type="text" name="" id="" placeholder="user@gmail.com" />
+        </div>
+      </section>
     </main>
     <footer>
-
+      <div class="footer-top">
+        <div class="top-left-footer">
+          44, Big Building Roosevelt Street<br /><br />Beach Gardens Florida
+          33410
+        </div>
+        <div class="top-right-footer">
+          <p class="top-number">
+            <i class="fa-solid fa-phone"></i> +00 123 584 124
+          </p>
+          <p class="top-website">
+            <i class="fa-solid fa-globe"></i> www.website.com
+          </p>
+        </div>
+      </div>
+      <hr />
+      <div class="footer-middle">
+        <a href="#"><i class="fa-brands fa-facebook facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin linkedin"></i></a>
+      </div>
+      <hr />
+      <div class="footer-bottom">
+        <div>2017, All Rights Reserved.</div>
+        <div>Unsubscribe</div>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
